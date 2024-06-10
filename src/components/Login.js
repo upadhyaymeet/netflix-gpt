@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -43,8 +44,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:
-              "https://media.istockphoto.com/id/1226452674/photo/closeup-shot-hands-using-laptop-computer-and-internet-typing-on-keyboard-searching.jpg?s=1024x1024&w=is&k=20&c=D-J_tdDYYbdwTJ8XA_OU3jvIjn06MgZ5WLsc53k3_70=",
+            photoURL:USER_AVATAR,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
