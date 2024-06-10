@@ -3,3 +3,12 @@ export const LOGO =
 
 export const USER_AVATAR =
   "https://media.istockphoto.com/id/1226452674/photo/closeup-shot-hands-using-laptop-computer-and-internet-typing-on-keyboard-searching.jpg?s=1024x1024&w=is&k=20&c=D-J_tdDYYbdwTJ8XA_OU3jvIjn06MgZ5WLsc53k3_70=";
+
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMWNkNzJjODBjMDNkMjg0ZTY0NWQzYjY0NGU3NjA3MCIsInN1YiI6IjY2NjZhOGQ3YjkxOGQ1NmU3MTlmNTU3MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.m38uUkq5ohuhLwn3scGX9ULDxbb9vq-mgoMSUqGKsnU",
+  },
+};
