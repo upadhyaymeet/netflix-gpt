@@ -17,6 +17,7 @@
 - Update profile api call 
 - BugFix - Sign Up and user displayname and profile picture update
 - BugFix - if the user is not loggged in redirect/browser to login page and vice-versa
+- Unsubscribed to the onAuth state changed callback
 
 # Features
 

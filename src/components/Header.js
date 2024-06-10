@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, email, displayName, photoURL } = user;
         //redux
@@ -38,6 +38,9 @@ const Header = () => {
         navigate("/")
       }
     });
+
+    //unsubscribing when component 
+    return ()=> unsubscribe()
   }, []);
 
   return (
